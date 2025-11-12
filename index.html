@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorena Oliveira</title>
+
+    <!-- Tailwind via CDN (ok para testes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Configura nossas cores pastel personalizadas -->
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Paleta de cores inspirada na imagem: tons terrosos, suaves e acolhedores
+                        'brand-bege': '#FBF9F6', // Um fundo muito claro, quase branco
+                        'brand-light': '#F5EFE6', // Um bege claro para seções
+                        'brand-base': '#DBC1AC', // Cor de destaque suave
+                        'brand-medium': '#8D7B68', // Cor de texto principal ou acentos
+                        'brand-dark': '#65584a', // Cor de texto mais escura
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Estilo para garantir que o corpo ocupe a tela e use a fonte padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBF9F6; /* brand-bege */
+            color: #65584a; /* brand-dark */
+        }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div id="root"></div>
+
+    <!-- Vite vai injetar o bundle JS aqui -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
