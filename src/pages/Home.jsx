@@ -11,8 +11,8 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-brand-primary to-brand-primary/80 py-20">
-        <div className="container mx-auto px-6">
+      <section className="bg-gradient-to-r from-brand-primary to-brand-primary/80 md:py-20">
+        <div className="container mx-auto px-6 flex items-center min-h-screen md:min-h-0">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Encontre o Psicoterapeuta Ideal para Você
@@ -41,7 +41,7 @@ function Home() {
 
           {/* Search Filters */}
           <div className="bg-brand-primary/20 rounded-2xl p-6 md:p-8 mb-12">
-            <div className="grid grid-cols-4 gap-6 items-end">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
               <div>
                 <label htmlFor="specialty" className="block text-sm font-medium text-gray-700 mb-2">Especialidade</label>
                 <select id="specialty" className="w-full rounded-lg border-gray-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary">
@@ -120,7 +120,7 @@ function Home() {
       <section className="py-16 bg-brand-primary/20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Por que Escolher a Plataforma?</h2>
-          <div className="grid grid-cols-3 gap-10 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-4"><Shield size={32} className="text-gray-800" /></div>
               <h3 className="font-bold text-lg text-gray-800 mb-2">Segurança e Privacidade</h3>
