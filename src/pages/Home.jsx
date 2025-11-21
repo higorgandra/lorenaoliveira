@@ -12,7 +12,7 @@ function Home() {
     <>
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-primary to-brand-primary/80 md:py-20">
-        <div className="container mx-auto px-6 flex items-center min-h-screen md:min-h-0">
+        <div className="container mx-auto px-6 flex items-center min-h-[calc(100vh-4rem)] md:min-h-0">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Encontre o Psicoterapeuta Ideal para Você
