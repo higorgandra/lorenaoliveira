@@ -90,6 +90,32 @@ body {
   overflow-x: hidden;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eae2d9; /* Cor brand-primary */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4c9bb; /* Um tom mais escuro de brand-primary */
+}
+
+/* Focus states para acessibilidade */
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+    outline: 2px solid #eae2d9; /* Cor brand-primary */
+    outline-offset: 2px;
+}
+
 /* ===================================
    TIPOGRAFIA
    =================================== */
@@ -869,11 +895,7 @@ a:hover {
   .section { padding: var(--spacing-xl) var(--spacing-md); }
   .section-title { font-size: 1.75rem; }
   
-  .grid-cols-2,
-  .grid-cols-3,
-  .grid-cols-4 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+  /* A regra que causava o problema foi removida daqui */
   
   .navbar-menu {
     flex-direction: column;
@@ -905,11 +927,6 @@ a:hover {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-*:focus-visible {
-  outline: 2px solid var(--primary-blue);
-  outline-offset: 2px;
 }
 
 /* ===================================

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* O seu estilo 'body' personalizado */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FBF9F6; /* brand-bege */
+  color: #65584a; /* brand-dark */
+}
