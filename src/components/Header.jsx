@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'react-feather';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Efeito para bloquear o scroll da página quando o menu estiver aberto
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Função de limpeza para garantir que o scroll seja reativado
+    return () => { document.body.style.overflow = 'unset' };
+  }, [isMenuOpen]);
 
   return (
     <header className="bg-brand-bege shadow-sm sticky top-0 z-50">
